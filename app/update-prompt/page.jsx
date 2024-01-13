@@ -28,7 +28,7 @@ const EditPrompt = () => {
         if(promptId) getPromptDetails();
     }, [promptId])
 
-    const UpdataPrompt = async (e) =>{
+    const updataPrompt = async (e) =>{
         e.preventDefault();
         setSubmitting(true);
 
@@ -58,7 +58,7 @@ const EditPrompt = () => {
         post={post}
         setPost={setPost}
         submitting={submitting}
-        handleSubmit={UpdataPrompt}
+        handleSubmit={updataPrompt}
     />
   )
 }
